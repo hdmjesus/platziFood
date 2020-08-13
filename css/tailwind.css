@@ -3,3 +3,40 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.form-control {
+  @apply w-full py-1 px-4 bg-gray-200 border-green-400 rounded border-2 text-gray-800  leading-snug;
+}
+
+.form-control:hover {
+  @apply bg-white;
+}
+
+.btn {
+  @apply w-full h-10 text-white block mx-auto bg-gray-500 px-4 py-1 mt-5 rounded shadow-xl;
+}
+
+.btn:hover {
+  @apply shadow-none bg-gray-400;
+}
+
+.form-control:focus {
+  @apply outline-none shadow-none;
+}
+.alert {
+  @apply w-full mt-2 mb-2 px-4 py-4;
+  @apply border-2 rounded-lg;
+  @apply border-gray-800 bg-gray-400 text-gray-800;
+}
+
+.alert-danger {
+  @apply border-red-800 bg-red-300 text-red-900;
+}
+
+.alert-warning {
+  @apply border-orange-800 bg-orange-300 text-orange-900;
+}
+
+.alert-info {
+  @apply border-blue-800 bg-blue-300 text-blue-900;
+}
